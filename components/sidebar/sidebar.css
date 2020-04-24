@@ -1,0 +1,11 @@
+.gce__sidebar--container {
+  position: fixed;
+  width: 20vw;  
+  height: 100vw;
+}
+
+.gce__sidebar--content {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
