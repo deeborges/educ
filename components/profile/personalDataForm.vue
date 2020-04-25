@@ -1,65 +1,152 @@
 <template>
-  <form class="gce__profile--dados-pessoais">
-    <fieldset>
-      <legend>Dados pessoais</legend>
-      <div class="gce__profile--campos">
-        <div class="gce__profile--nome-completo">
-          <label for="nomeCompleto">Nome completo</label>
-          <input type="text" name="nomeCompleto" />
-        </div>
-        <div class="gce__profile--cpf-rg">
-          <label for="cpf">CPF:</label>
-          <input type="text" name="cpf" />
-
-          <label for="rg">RG:</label>
-          <input type="text" name="rg" />
-        </div>
-        <div>
-          <label for="dataNascimento">Data de nascimento</label>
-          <input type="text" name="dataNascimento" />
-
-          <label for="naturalidade">Naturalidade</label>
-          <input type="text" name="naturalidade" />
-        </div>
-      </div>
-    </fieldset>
+  <form>
+    <p class="desc__params">Dados pessoais</p>
+    <div class="grid__02">
+      <label for="nome_completo">Nome completo:</label>
+      <input type="text" name="nome_completo" />
+    </div>
+    <div class="grid__04">
+      <label for="cpf">CPF:</label>
+      <TheMask :mask="'###.###.###-##'" name="cpf" />
+      <label for="rg">RG:</label>
+      <TheMask :mask="'############-#'" name="rg" />
+    </div>
+    <div class="grid__06">
+      <label for="data_nascimento">Data de nascimento:</label>
+      <TheMask type="tel" :mask="'##/##/####'" name="data_nascimento" />
+      <label for="naturalidade">Naturalidade:</label>
+      <input type="text" name="naturalidade" />
+      <label for="estados_brasil">Estado</label>
+      <select name="estados_brasil">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      </select>
+    </div>
   </form>
 </template>
 
 <script>
-export default {};
+import { TheMask } from "vue-the-mask";
+
+export default {
+  components: {
+    TheMask
+  }
+};
 </script>
 
-<style>
-.gce__profile--dados-pessoais {
-  border-radius: 5px;
+<style scoped>
+form {
   background-color: #fdfdfd;
+  border-radius: 5px;
   box-shadow: 0 0 5px 1px #d9d9d9;
-  padding: 10px;
-}
-
-.gce__profile--dados-pessoais fieldset {
-  padding: 10px;
-}
-
-.gce__profile--dados-pessoais legend {
-  padding: 0 10px;
-}
-
-.gce__profile--campos {
-  display: grid;
-}
-.gce__profile--nome-completo {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-}
-
-.gce__profile--nome-completo input {
+  margin: 15px 0;
+  padding: 20px;
+  position: relative;
   width: 100%;
 }
 
-.gce__profile--cpf-rg {
+form > fieldset {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+form > fieldset > legend {
+  font-weight: bold;
+  padding: 0 10px;
+  position: relative;
+  text-align: center;
+}
+
+form label {
+  align-content: center;
   display: grid;
-  grid-template-columns: repeat(4, auto 1fr)
+  font-size: 1rem;
+  position: relative;
+}
+
+form input {
+  font-size: 1rem;
+  position: relative;
+  width: auto;
+  min-width: 20px;
+}
+
+form input[name="nome_completo"] {
+  font-size: 1rem;
+  position: relative;
+  width: auto;
+  min-width: 200px;
+}
+
+form select {
+  font-size: 1rem;
+  position: relative;
+}
+
+form select option {
+  font-size: 1rem;
+  position: relative;
+}
+
+.grid__02 {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  margin: 5px 0;
+  position: relative;
+  width: auto;
+}
+
+.grid__04 {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(2, auto 1fr);
+  gap: 10px;
+  margin: 5px 0;
+  position: relative;
+  width: auto;
+}
+
+.grid__06 {
+  display: grid;
+  grid-auto-rows: auto;
+  grid-template-columns: repeat(3, auto 1fr);
+  gap: 10px;
+  margin: 5px 0;
+  position: relative;
+  width: auto;
+}
+.desc__params {
+  font-size: 1.2rem;
+  color: #797979;
 }
 </style>

@@ -1,3 +1,3 @@
 export default {
-  css: ['~assets/color.css']
+  css: ['~assets/color.css'],
 }
