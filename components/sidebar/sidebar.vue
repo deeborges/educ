@@ -16,9 +16,11 @@ export default {
 .gce__sidebar--container {
   position: fixed;
   width: 20vw;
-  height: 100vw;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  overflow-y: auto;
 }
 
 .gce__sidebar--content {

@@ -1,6 +1,6 @@
 <template>
   <section class="gce__dashboard--container">
-    <article class="gce__dashboard--content bg--rosa">
+    <article class="gce__dashboard--content">
       <slot></slot>
     </article>
   </section>
@@ -17,11 +17,11 @@ export default {
   display: grid;
   grid-template-columns: 20vw auto;
   height: 100vw;
-  position: relative;
 }
 
 .gce__dashboard--content {
   grid-column-start: 2;
-  position: relative;
+  padding: 20px;
+  background-color: #fdfdfd;
 }
 </style>

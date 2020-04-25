@@ -1,13 +1,14 @@
 <template>
-  <Perfil />
+  <div>
+    <Card />
+  </div>
 </template>
 
 <script>
-import Perfil from '../../../components/perfil';
-
+import Card from '../../../components/card';
 export default {
   components: {
-    Perfil
+    Card,
   }
 }
 </script>

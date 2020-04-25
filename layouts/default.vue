@@ -1,16 +1,13 @@
 <template>
-  <main class="gce__educacional">
-    <nuxt/>
-  </main>
+  <nuxt/>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-.gce__educacional {
-  position: relative;
+  font-family: 'Baloo Tamma 2', cursive;
 }
 </style>
