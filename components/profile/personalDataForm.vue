@@ -16,8 +16,8 @@
       <TheMask type="tel" :mask="'##/##/####'" name="data_nascimento" />
       <label for="naturalidade">Naturalidade:</label>
       <input type="text" name="naturalidade" />
-      <label for="estados_brasil">Estado:</label>
-      <select name="estados_brasil">
+      <label for="estados_dados_pessoais">Estado:</label>
+      <select name="estados_dados_pessoais">
         <option value="AC">Acre</option>
         <option value="AL">Alagoas</option>
         <option value="AP">Amapá</option>
@@ -71,6 +71,7 @@ form {
   margin: 15px 0;
   padding: 20px;
   position: relative;
+  width: auto;
 }
 
 form label {
@@ -82,7 +83,7 @@ form label {
 
 form input {
   font-size: 1rem;
-  height: 30px;
+  height: 42px;
   min-width: 20px;
   position: relative;
   width: auto;
@@ -97,6 +98,7 @@ form input[name="nome_completo"] {
 
 form select {
   font-size: 1rem;
+  height: auto;
   position: relative;
 }
 
@@ -126,7 +128,7 @@ form select option {
 .grid__06 {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(3, auto 1fr);
+  grid-template-columns: repeat(3, auto auto);
   gap: 10px;
   position: relative;
   width: auto;

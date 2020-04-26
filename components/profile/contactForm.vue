@@ -2,10 +2,11 @@
   <form>
     <p class="desc__params">Informações de contato</p>
     <div class="grid__02">
-      <label for="telefonePrincipal">Telefone 01:</label>
-      <TheMask :mask="['(##) ####-####', '(##) #####-####']" name="telefonePrincipal" />
-      <label for="telefoneSecundario">Telefone 02:</label>
-      <TheMask :mask="['(##) ####-####', '(##) #####-####']" name="telefoneSecundario" />
+      <label for="telefone_principal">Telefone 01:</label>
+      <TheMask :mask="['(##) ####-####', '(##) #####-####']" name="telefone_principal" />
+
+      <label for="telefone_secundario">Telefone 02:</label>
+      <TheMask :mask="['(##) ####-####', '(##) #####-####']" name="telefone_secundario" />
     </div>
     <div class="grid__02">
       <label for="email">E-mail:</label>
@@ -37,6 +38,7 @@ form {
   margin: 15px 0;
   padding: 20px;
   position: relative;
+  width: auto;
 }
 
 form label {
@@ -47,8 +49,10 @@ form label {
 }
 
 form input {
+  align-content: center;
+  display: grid;
   font-size: 1rem;
-  height: 30px;
+  height: 42px;
   min-width: 20px;
   position: relative;
   width: auto;
@@ -75,7 +79,7 @@ form input {
 .grid__06 {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(3, auto 1fr);
+  grid-template-columns: repeat(3, auto auto);
   gap: 10px;
   position: relative;
   width: auto;

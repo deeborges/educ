@@ -2,25 +2,25 @@
   <form>
     <p class="desc__params">Endereço</p>
     <div class="grid__06">
-      <label for="telefone_principal">Logradouro</label>
-      <TheMask :mask="['(##) ####-####', '(##) #####-####']" name="telefone_principal" />
+      <label for="logradouro">Logradouro</label>
+      <input type="text" name="logradouro" />
 
-      <label for="telefone_secundario">Complemento</label>
-      <TheMask :mask="['(##) ####-####', '(##) #####-####']" name="telefone_secundario" />
+      <label for="complemento">Complemento</label>
+      <input type="text" name="complemento" />
 
       <label for="numero_casa">nº</label>
-      <input type="email" name="numero_casa" />
+      <input type="text" name="numero_casa" />
     </div>
 
     <div class="grid__06">
-      <label for="email">Bairro</label>
-      <input type="email" name="email" />
+      <label for="bairro">Bairro</label>
+      <input type="text" name="bairro" />
       
-      <label for="email">Cidade</label>
-      <input type="email" name="email" />
+      <label for="cidade">Cidade</label>
+      <input type="text" name="cidade" />
       
-      <label for="email">Estado</label>
-      <select name="estados_brasil">
+      <label for="estados_endereco">Estado</label>
+      <select name="estados_endereco">
         <option value="AC">Acre</option>
         <option value="AL">Alagoas</option>
         <option value="AP">Amapá</option>
@@ -54,16 +54,6 @@
   </form>
 </template>
 
-<script>
-import { TheMask } from "vue-the-mask";
-
-export default {
-  components: {
-    TheMask
-  }
-};
-</script>
-
 <style scoped>
 form {
   background-color: #fdfdfd;
@@ -74,6 +64,7 @@ form {
   margin: 15px 0;
   padding: 20px;
   position: relative;
+  width: auto;
 }
 
 form label {
@@ -85,7 +76,7 @@ form label {
 
 form input {
   font-size: 1rem;
-  height: 30px;
+  height: 42px;
   min-width: 20px;
   position: relative;
   width: auto;
