@@ -16,7 +16,7 @@
       <TheMask type="tel" :mask="'##/##/####'" name="data_nascimento" />
       <label for="naturalidade">Naturalidade:</label>
       <input type="text" name="naturalidade" />
-      <label for="estados_brasil">Estado</label>
+      <label for="estados_brasil">Estado:</label>
       <select name="estados_brasil">
         <option value="AC">Acre</option>
         <option value="AL">Alagoas</option>
@@ -47,6 +47,7 @@
         <option value="TO">Tocantins</option>
       </select>
     </div>
+    <Button class="button" type="submit">ATUALIZAR DADOS</Button>
   </form>
 </template>
 
@@ -65,24 +66,11 @@ form {
   background-color: #fdfdfd;
   border-radius: 5px;
   box-shadow: 0 0 5px 1px #d9d9d9;
+  display: grid;
+  gap: 10px;
   margin: 15px 0;
   padding: 20px;
   position: relative;
-  width: 100%;
-}
-
-form > fieldset {
-  border: none;
-  border-radius: 10px;
-  padding: 20px;
-  position: relative;
-}
-
-form > fieldset > legend {
-  font-weight: bold;
-  padding: 0 10px;
-  position: relative;
-  text-align: center;
 }
 
 form label {
@@ -94,6 +82,7 @@ form label {
 
 form input {
   font-size: 1rem;
+  height: 30px;
   position: relative;
   width: auto;
   min-width: 20px;
@@ -121,7 +110,6 @@ form select option {
   grid-auto-rows: auto;
   grid-template-columns: auto 1fr;
   gap: 10px;
-  margin: 5px 0;
   position: relative;
   width: auto;
 }
@@ -131,7 +119,6 @@ form select option {
   grid-auto-rows: auto;
   grid-template-columns: repeat(2, auto 1fr);
   gap: 10px;
-  margin: 5px 0;
   position: relative;
   width: auto;
 }
@@ -141,12 +128,18 @@ form select option {
   grid-auto-rows: auto;
   grid-template-columns: repeat(3, auto 1fr);
   gap: 10px;
-  margin: 5px 0;
   position: relative;
   width: auto;
 }
+
 .desc__params {
-  font-size: 1.2rem;
   color: #797979;
+  font-size: 1.2rem;
+  position: relative;
+}
+
+.button {
+  display: grid;
+  position: relative;
 }
 </style>

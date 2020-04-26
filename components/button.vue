@@ -17,10 +17,11 @@ export default {
 
 <style>
 button {
-  background-color: #9d9d9d;
+  background-color: #3b2162;
   border: none;
   border-radius: 10px;
+  color: #ffffff;
   padding: 10px 20px;
-  position: absolute;
+
 }
 </style>
