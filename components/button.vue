@@ -17,7 +17,7 @@ export default {
 
 <style>
 button {
-  background-color: #3b2162;
+  background-color: #6f6f6f;
   border: none;
   border-radius: 10px;
   color: #ffffff;

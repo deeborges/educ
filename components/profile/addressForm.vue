@@ -1,16 +1,54 @@
 <template>
   <form>
     <p class="desc__params">Endereço</p>
-    <div class="grid__04">
-      <label for="telefone_principal">Telefone 01:</label>
+    <div class="grid__06">
+      <label for="telefone_principal">Logradouro</label>
       <TheMask :mask="['(##) ####-####', '(##) #####-####']" name="telefone_principal" />
 
-      <label for="telefone_secundario">Telefone 02:</label>
+      <label for="telefone_secundario">Complemento</label>
       <TheMask :mask="['(##) ####-####', '(##) #####-####']" name="telefone_secundario" />
+
+      <label for="numero_casa">nº</label>
+      <input type="email" name="numero_casa" />
     </div>
-    <div class="grid__02">
-      <label for="email">E-mail:</label>
+
+    <div class="grid__06">
+      <label for="email">Bairro</label>
       <input type="email" name="email" />
+      
+      <label for="email">Cidade</label>
+      <input type="email" name="email" />
+      
+      <label for="email">Estado</label>
+      <select name="estados_brasil">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espírito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+      </select>
     </div>
     <Button class="button" type="submit">ATUALIZAR ENDEREÇO</Button>
   </form>
@@ -48,9 +86,24 @@ form label {
 form input {
   font-size: 1rem;
   height: 30px;
+  min-width: 20px;
   position: relative;
   width: auto;
-  min-width: 20px;
+}
+
+form input[name='numero_casa'] {
+  width: 50px;
+}
+
+form select {
+  font-size: 1rem;
+  height: auto;
+  position: relative;
+}
+
+form select option {
+  font-size: 1rem;
+  position: relative;
 }
 
 .grid__02 {
@@ -74,7 +127,7 @@ form input {
 .grid__06 {
   display: grid;
   grid-auto-rows: auto;
-  grid-template-columns: repeat(3, auto 1fr);
+  grid-template-columns: repeat(3, auto auto);
   gap: 10px;
   position: relative;
   width: auto;

@@ -27,6 +27,6 @@ export default {
   display: grid;
   gap: 20px;
   grid-auto-rows: auto;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 4fr 2fr;
 }
 </style>

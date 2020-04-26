@@ -83,9 +83,9 @@ form label {
 form input {
   font-size: 1rem;
   height: 30px;
+  min-width: 20px;
   position: relative;
   width: auto;
-  min-width: 20px;
 }
 
 form input[name="nome_completo"] {

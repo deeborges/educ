@@ -1,7 +1,7 @@
 <template>
   <form>
     <p class="desc__params">Informações de contato</p>
-    <div class="grid__04">
+    <div class="grid__02">
       <label for="telefonePrincipal">Telefone 01:</label>
       <TheMask :mask="['(##) ####-####', '(##) #####-####']" name="telefonePrincipal" />
       <label for="telefoneSecundario">Telefone 02:</label>
@@ -34,6 +34,7 @@ form {
   box-shadow: 0 0 5px 1px #d9d9d9;
   display: grid;
   gap: 10px;
+  margin: 15px 0;
   padding: 20px;
   position: relative;
 }
@@ -48,9 +49,9 @@ form label {
 form input {
   font-size: 1rem;
   height: 30px;
+  min-width: 20px;
   position: relative;
   width: auto;
-  min-width: 20px;
 }
 
 .grid__02 {
