@@ -1,6 +1,9 @@
 <template>
   <section>
-    <PersonalDataForm />
+    <article class="gce__profile--pc">
+      <PersonalDataForm />
+      <CardProfile />
+    </article>
     <article class="gce__profile--pc">
       <AddressForm />
       <ContactForm />
@@ -12,12 +15,14 @@
 import PersonalDataForm from "../../../components/profile/personalDataForm";
 import ContactForm from "../../..//components/profile/contactForm";
 import AddressForm from "../../../components/profile/addressForm";
+import CardProfile from '../../../components/profile/cardProfile';
 
 export default {
   components: {
     PersonalDataForm,
     ContactForm,
-    AddressForm
+    AddressForm,
+    CardProfile
   }
 };
 </script>

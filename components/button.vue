@@ -1,5 +1,8 @@
 <template>
-  <button :type=type>
+  <button 
+  :type=type
+    class="button__submit"
+  >
     <slot></slot>
   </button>
 </template>
@@ -8,7 +11,7 @@
 export default {
   props: {
     type: {
-      String: true,
+      type: String,
       required: true,
     },
   }
@@ -16,12 +19,11 @@ export default {
 </script>
 
 <style>
-button {
+.button__submit {
   background-color: #6f6f6f;
   border: none;
   border-radius: 10px;
   color: #ffffff;
   padding: 10px 20px;
-
 }
 </style>

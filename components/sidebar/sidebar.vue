@@ -1,5 +1,5 @@
 <template>
-  <aside class="gce__sidebar--container bg--roxo_medio cl--cinza">
+  <aside class="gce__sidebar--container">
     <article class="gce__sidebar--content">
       <slot></slot>
     </article>
@@ -14,13 +14,12 @@ export default {
 
 <style>
 .gce__sidebar--container {
-  position: fixed;
-  width: 20vw;
+  background-color: #3b2162;
+  display: grid;
   height: 100vh;
-  left: 0;
-  top: 0;
-  position: fixed;
   overflow-y: auto;
+  position: fixed;
+  width: 15vw;
 }
 
 .gce__sidebar--content {

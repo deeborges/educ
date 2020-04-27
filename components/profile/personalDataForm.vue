@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form class="form__profile--personal__data">
     <p class="desc__params">Dados pessoais</p>
     <div class="grid__02">
       <label for="nome_completo">Nome completo:</label>
@@ -47,7 +47,6 @@
         <option value="TO">Tocantins</option>
       </select>
     </div>
-    <Button class="button" type="submit">ATUALIZAR DADOS</Button>
   </form>
 </template>
 
@@ -62,11 +61,12 @@ export default {
 </script>
 
 <style scoped>
-form {
+.form__profile--personal__data {
   background-color: #fdfdfd;
   border-radius: 5px;
   box-shadow: 0 0 5px 1px #d9d9d9;
   display: grid;
+  height: fit-content;
   gap: 10px;
   margin: 15px 0;
   padding: 20px;
@@ -74,14 +74,14 @@ form {
   width: auto;
 }
 
-form label {
+.form__profile--personal__data label {
   align-content: center;
   display: grid;
   font-size: 1rem;
   position: relative;
 }
 
-form input {
+.form__profile--personal__data input {
   font-size: 1rem;
   height: 42px;
   min-width: 20px;
@@ -89,20 +89,20 @@ form input {
   width: auto;
 }
 
-form input[name="nome_completo"] {
+.form__profile--personal__data input[name="nome_completo"] {
   font-size: 1rem;
   position: relative;
   width: auto;
   min-width: 200px;
 }
 
-form select {
+.form__profile--personal__data select {
   font-size: 1rem;
   height: auto;
   position: relative;
 }
 
-form select option {
+.form__personal__data select option {
   font-size: 1rem;
   position: relative;
 }
@@ -136,12 +136,8 @@ form select option {
 
 .desc__params {
   color: #797979;
-  font-size: 1.2rem;
-  position: relative;
-}
-
-.button {
   display: grid;
+  font-size: 1.2rem;
   position: relative;
 }
 </style>

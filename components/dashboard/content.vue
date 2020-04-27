@@ -15,13 +15,12 @@ export default {
 <style>
 .gce__dashboard--container {
   display: grid;
-  grid-template-columns: 20vw auto;
+  grid-template-columns: 15vw auto;
   height: 100vw;
 }
 
 .gce__dashboard--content {
   grid-column-start: 2;
   padding: 20px;
-  background-color: #fdfdfd;
 }
 </style>

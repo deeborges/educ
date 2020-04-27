@@ -1,5 +1,5 @@
 <template>
-  <main class="gce__dashboard bg--cinza">
+  <main class="gce__dashboard">
     <slot></slot>
   </main>
 </template>
@@ -12,6 +12,7 @@ export default {
 
 <style>
 .gce__dashboard {
+  background-color: #e8e8e86b ;
   display: grid;
   grid-template-columns: 1fr;
 }
