@@ -6,14 +6,10 @@
 
 <script>
 export default {
-  name: 'Dashboard'
-}
+  name: "Dashboard"
+};
 </script>
 
 <style>
-.gce__dashboard {
-  background-color: #e8e8e86b ;
-  display: grid;
-  grid-template-columns: 1fr;
-}
+@import url("~/assets/dashboard/dashboard-container.css");
 </style>

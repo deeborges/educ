@@ -1,0 +1,7 @@
+.e {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: auto;
+  padding: 10px 20px;
+  margin: 10px 0;
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="e">
-    <div class="avatar"> Deyvison </div>
+    <div class="avatar">Deyvison</div>
     <ButtonUpload>Atualizar imagem</ButtonUpload>
   </div>
 </template>
@@ -16,11 +16,5 @@ export default {
 </script>
 
 <style>
-.e {
-  display: grid;
-  grid-template-columns: 1fr;
-  height: auto;
-  padding: 10px 20px;
-  margin: 10px 0;
-}
+@import url('~/assets/dashboard/profile/profile-form-profile-image.css');
 </style>

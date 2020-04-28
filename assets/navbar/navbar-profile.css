@@ -1,12 +1,3 @@
-<template>
-  <div class="gce__navbar--profile">
-    <div>imagem</div>
-    <p>Deyvison</p>
-    <i>></i>
-  </div>  
-</template>
-
-<style>
 .gce__navbar--profile {
   width: 300px;
   height: 30px;
@@ -21,4 +12,3 @@
   justify-items: center;
   align-items: center;
 }
-</style>

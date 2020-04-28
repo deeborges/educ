@@ -1,21 +1,21 @@
 <template>
   <form class="form__profile--address">
-    <p class="desc__params">Endereço: </p>
+    <p class="desc__params">Endereço:</p>
     <div class="grid__06">
-      <label for="logradouro">Logradouro: </label>
+      <label for="logradouro">Logradouro:</label>
       <input type="text" name="logradouro" />
-      <label for="complemento">Complemento: </label>
+      <label for="complemento">Complemento:</label>
       <input type="text" name="complemento" />
-      <label for="numero_casa">nº: </label>
+      <label for="numero_casa">nº:</label>
       <input type="text" name="numero_casa" />
     </div>
 
     <div class="grid__06">
-      <label for="bairro">Bairro: </label>
-      <input type="text" name="bairro" />    
-      <label for="cidade">Cidade: </label>
+      <label for="bairro">Bairro:</label>
+      <input type="text" name="bairro" />
+      <label for="cidade">Cidade:</label>
       <input type="text" name="cidade" />
-      <label for="estados_endereco">Estado: </label>
+      <label for="estados_endereco">Estado:</label>
       <select name="estados_endereco">
         <option value="AC">Acre</option>
         <option value="AL">Alagoas</option>
@@ -45,72 +45,10 @@
         <option value="SE">Sergipe</option>
         <option value="TO">Tocantins</option>
       </select>
-      </div>
-
+    </div>
   </form>
 </template>
 
 <style scoped>
-.form__profile--address {
-  background-color: #fdfdfd;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 1px #d9d9d9;
-  display: grid;
-  gap: 10px;
-  height: fit-content;
-  margin: 15px 0;
-  padding: 20px;
-  position: relative;
-  width: auto;
-}
-
-.form__profile--address label {
-  align-content: center;
-  display: grid;
-  font-size: 1rem;
-  position: relative;
-}
-
-.form__profile--address input {
-  font-size: 1rem;
-  height: 42px;
-  min-width: 20px;
-  position: relative;
-  width: auto;
-}
-
-.form__profile--address input[name='numero_casa'] {
-  width: 50px;
-}
-
-.form__profile--address select {
-  font-size: 1rem;
-  height: auto;
-  position: relative;
-}
-
-.form__profile--address select option {
-  font-size: 1rem;
-  position: relative;
-}
-
-.grid__06 {
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: repeat(3, auto  auto);
-  gap: 10px;
-  position: relative;
-  width: auto;
-}
-
-.desc__params {
-  color: #797979;
-  font-size: 1.2rem;
-  position: relative;
-}
-
-.button {
-  display: grid;
-  position: relative;
-}
+@import url('~/assets/dashboard/profile/profile-form-address.css');
 </style>

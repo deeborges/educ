@@ -8,19 +8,10 @@
 
 <script>
 export default {
-  name: 'DashboardContent'
-}
+  name: "DashboardContent"
+};
 </script>
 
 <style>
-.gce__dashboard--container {
-  display: grid;
-  grid-template-columns: 15vw auto;
-  height: 100vw;
-}
-
-.gce__dashboard--content {
-  grid-column-start: 2;
-  padding: 20px;
-}
+@import url('~/assets/dashboard/dashboard-content.css');
 </style>

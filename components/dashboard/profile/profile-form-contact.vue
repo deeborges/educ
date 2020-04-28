@@ -21,55 +21,11 @@ import { TheMask } from "vue-the-mask";
 
 export default {
   components: {
-    TheMask,
+    TheMask
   }
 };
 </script>
 
 <style>
-.form__profile--contact {
-  background-color: #fdfdfd;
-  border-radius: 5px;
-  box-shadow: 0 0 5px 1px #d9d9d9;
-  display: grid;
-  height: fit-content;
-  gap: 10px;
-  grid-auto-rows: auto;
-  margin: 15px 0;
-  padding: 20px;
-  position: relative;
-  width: auto;
-}
-
-.form__profile--contact label {
-  align-content: center;
-  display: grid;
-  font-size: 1rem;
-  position: relative;
-}
-
-.form__profile--contact input {
-  align-content: center;
-  display: grid;
-  font-size: 1rem;
-  height: 42px;
-  min-width: 20px;
-  position: relative;
-  width: auto;
-}
-
-.grid__02 {
-  display: grid;
-  grid-auto-rows: auto;
-  grid-template-columns: auto 1fr;
-  gap: 10px;
-  position: relative;
-  width: auto;
-}
-
-.desc__params {
-  color: #797979;
-  font-size: 1.2rem;
-  position: relative;
-}
+@import url('~/assets/dashboard/profile/profile-form-contact.css');
 </style>

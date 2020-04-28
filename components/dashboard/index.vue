@@ -4,9 +4,9 @@
       <SidebarOptions />
     </Sidebar>
     <DashboardContent>
-      <Navbar>
+      <NavbarContainer>
         <NavbarProfile />
-      </Navbar>
+      </NavbarContainer>
       <nuxt-child></nuxt-child>
     </DashboardContent>
   </DashboardContainer>
@@ -17,8 +17,8 @@ import DashboardContainer from "../dashboard/dashboard-container";
 import DashboardContent from "../dashboard/dashboard-content";
 import Sidebar from "../../components/sidebar/sidebar";
 import SidebarOptions from "../../components/sidebar/options";
-import Navbar from "../../components/navbar/navbar";
-import NavbarProfile from "../../components/navbar/navProfile";
+import NavbarContainer from "../navbar/navbar-container";
+import NavbarProfile from "../navbar/navbar-profile";
 
 export default {
   name: "PageDashboard",
@@ -28,8 +28,8 @@ export default {
     DashboardContent,
     Sidebar,
     SidebarOptions,
-    Navbar,
-    NavbarProfile,
+    NavbarContainer,
+    NavbarProfile
   }
 };
 </script>
