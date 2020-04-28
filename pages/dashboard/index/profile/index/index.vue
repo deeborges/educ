@@ -1,9 +1,5 @@
 <template>
-  <section>
-    <article>
-      <h1>Perfil</h1>
-    </article>
-  </section>
+  <input type="text" placeholder="barra de pesquisa" name="" id="">
 </template>
 
 <script>

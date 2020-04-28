@@ -1,38 +1,14 @@
 <template>
-  <DashBoard>
-    <Sidebar>
-      <SidebarOptions />
-    </Sidebar>
-    <DashBoardContent>
-      <Navbar>
-        <NavbarProfile />
-      </Navbar>
-      <nuxt-child></nuxt-child>
-    </DashBoardContent>
-  </DashBoard>
+  <PageDashboard />
 </template>
 
 <script>
-import DashBoard from "../../components/dashboard/dashboard";
-import DashBoardContent from "../../components/dashboard/content";
-import Sidebar from "../../components/sidebar/sidebar";
-import SidebarOptions from "../../components/sidebar/options";
-import Navbar from "../../components/navbar/navbar";
-import NavbarProfile from "../../components/navbar/navProfile";
+import PageDashboard from "../../components/dashboard/index";
 
 export default {
-  name: "DashboardPage",
-  layout: "default",
+  name: "RoutePageDashboard",
   components: {
-    DashBoard,
-    DashBoardContent,
-    Sidebar,
-    SidebarOptions,
-    Navbar,
-    NavbarProfile
+    PageDashboard
   }
 };
 </script>
-
-<style>
-</style>

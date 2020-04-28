@@ -1,5 +1,5 @@
 <template>
-  <img src="" alt="">
+  <p>{$this.router.props}</p>
 </template>
 
 <script>

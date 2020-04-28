@@ -1,27 +1,12 @@
 <template>
-  <button 
-  :type=type
-    class="button__upload"
-  >
-    <slot></slot>
-  </button>
+  <input type="file" class="button__upload" value="Fazer upload">
 </template>
-
-<script>
-export default {
-  props: {
-    type: {
-      type: String,
-      required: true,
-    }
-  }
-}
-</script>
 
 <style>
 .button__upload {
-  background-color: #edfdfc;
-  border: 1px dashed #13ddb6;
+  background-color: #13ddb6;
+  border: 1px dashed #edfdfc;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: bold;
   height: fit-content;
@@ -29,7 +14,7 @@ export default {
 }
 
 .button__upload:hover {
-  background-color: #13ddb6 ;
+  background-color: #0d8a72 ;
   border: 1px dashed#edfdfc;
   color: #ffffff;
   cursor: pointer;
