@@ -1,4 +1,4 @@
-export default class PersonalData {
+module.exports = class PersonalData {
   constructor(
     nome_completo,
     cpf,

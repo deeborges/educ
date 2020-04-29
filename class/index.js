@@ -1,3 +1,4 @@
-import Student from './Student';
+const Student = require("./Student")
 const aluno = new Student();
-aluno.dados_pessoais.rg();
+
+console.log(aluno);

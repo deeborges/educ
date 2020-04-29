@@ -1,4 +1,4 @@
-export default class Address {
+module.exports = class Address {
   constructor(
     logradouro,
     complemento,

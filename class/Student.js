@@ -1,8 +1,8 @@
-import Address from './Address';
-import Contact from './Contact';
-import PersonalData from './PersonalData';
+const Address = require('./Address');
+const Contact = require('./Contact');
+const PersonalData = require('./PersonalData') ;
 
-export default class Student {
+module.exports = class Student {
   constructor() {
     this.dados_pessoais = new PersonalData();
     this.endereco = new Address();
