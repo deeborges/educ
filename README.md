@@ -1,6 +1,6 @@
 # educ
 Sistema de gestão escolar.
-
-* ta incompleto
-  * estou adicionando alguns padrões, logicamente, o código vai mudar o visual, todo dia.
-https://www.digitalocean.com/community/tutorials/add-loading-indicators-to-your-vuejs-application
+To-do
+* Coisas a fazer
+ * Se o aluno for menor de idade adicionar suporte a responsavel (criar classe resposavel);
+ * Montar o backend pra fazer o teste com a busca (que falta ser estilizada e setada as props);
