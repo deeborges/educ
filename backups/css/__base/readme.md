@@ -1,0 +1,1 @@
+Seria seus arquivos base da sua aplicação, o que é comum para todo o seu layout como Reset e Plugins.

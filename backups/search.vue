@@ -5,11 +5,11 @@
       <label>Search title:</label>
     </div>
     <div class="wrapper">
-      <div class="card" v-for="post in filteredList">
-          <a v-bind:href="post.link" target="_blank">
-            <img v-bind:src="post.img" />
-            <small>posted by: {{ post.author }}</small>
-            {{ post.title }}
+      <div class="card" v-for="post in filteredList" :key="post.title">
+        <a v-bind:href="post.link" target="_blank">
+          <img v-bind:src="post.img" />
+          <small>posted by: {{ post.author }}</small>
+          {{ post.title }}
         </a>
       </div>
     </div>
@@ -27,6 +27,7 @@ class Post {
 }
 
 export default {
+  name: 'PageDashboardProfileSearch',
   data() {
     return {
       search: "",
@@ -86,7 +87,7 @@ export default {
           "https://cdn.worldvectorlogo.com/logos/feathersjs.svg"
         )
       ],
-      notFound: 'Não conseguimos encontrar o que procura.'
+      notFound: "Não conseguimos encontrar o que procura."
     };
   },
   computed: {
