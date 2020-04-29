@@ -49,6 +49,12 @@
   </form>
 </template>
 
+<script>
+export default {
+  name: 'ProfileFormAddress'
+}
+</script>
+
 <style scoped>
 @import url('~/assets/dashboard/profile/profile-form-address.css');
 </style>

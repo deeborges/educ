@@ -6,6 +6,12 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: 'NavbarProfile'
+}
+</script>
+
 <style>
 @import url('~/assets/navbar/navbar-profile.css');
 </style>

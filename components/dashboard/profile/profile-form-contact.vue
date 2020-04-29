@@ -20,6 +20,7 @@
 import { TheMask } from "vue-the-mask";
 
 export default {
+  name: 'ProfileFormContact',
   components: {
     TheMask
   }

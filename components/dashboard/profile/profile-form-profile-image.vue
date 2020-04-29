@@ -9,6 +9,7 @@
 import ButtonUpload from "../../button-upload";
 
 export default {
+  name: 'ProfileFormProfileImage',
   components: {
     ButtonUpload
   }

@@ -54,6 +54,7 @@
 import { TheMask } from "vue-the-mask";
 
 export default {
+  name: 'ProfileFormPersonalData',
   components: {
     TheMask
   }
