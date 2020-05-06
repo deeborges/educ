@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="search-wrapper">
+    <!-- <div class="search-wrapper">
       <input type="text" v-model="search" placeholder="Digite o nome..." />
       <label>Buscar aluno específico</label>
     </div>
@@ -12,7 +12,7 @@
           {{ post.title }}
         </a>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
