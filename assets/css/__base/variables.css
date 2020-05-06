@@ -1,0 +1,16 @@
+:root {
+  /* default colors */
+  --branco: "#fdfdfd";
+  --cinza_claro: "#d9d9d9";
+  --cinza_medio: "#797979";
+  --cinza_opaco: "rgba(232,232,232,0.41961)";  
+  --preto: "#170100";
+  --rosa_medio: "#fd6a82";
+  --roxo_escuro: "#3b2162";
+  --verde_claro: "#00efb6";
+
+  /* default colors alerts */
+  --danger: "";
+  --sucess: "";
+  --warning: "";
+}

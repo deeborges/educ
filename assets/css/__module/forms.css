@@ -1,0 +1,33 @@
+@import url('../__base/variables.css');
+
+form {
+  background-color: var(--branco);
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px var(--cinza_claro);
+  display: grid;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr;
+  height: fit-content;
+  margin: 15px 0;
+  padding: 20px;
+  position: relative;
+  width: auto;
+}
+
+form label {
+  align-items: center;
+  display: grid;
+  font-size: 1rem;
+  position: relative;
+}
+
+form input {
+  display: grid;
+  font-size: 1rem;
+  height: fit-content;
+  min-height: 20px;
+  min-width: 20px;
+  position: relative;
+  width: auto;
+}
