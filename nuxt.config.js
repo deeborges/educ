@@ -1,4 +1,4 @@
 export default {
-  css: ['~assets/css/main.css'],
+  // css: ['~assets/color.css'],
   generateSubfolders: false
 }
