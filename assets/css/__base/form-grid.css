@@ -1,0 +1,36 @@
+/* form grid*/
+.form_grid {
+  display: grid;
+}
+
+.form_grid_one {
+  grid-template-columns: fit-content(auto);
+  grid-template-rows: auto;
+}
+
+.form_grid_two {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+}
+
+.form_grid_four {
+  grid-template-columns: repeat(2, auto 1fr);
+  grid-template-rows: auto;
+}
+
+.form_grid_six {
+  grid-template-columns: repeat(3, auto auto);
+  grid-template-rows: auto;
+}
+
+.form_grid_row {
+  grid-auto-flow: row;
+}
+
+.form_grid_column {
+  grid-auto-flow: column;
+}
+
+.form_grid_dense {
+  grid-auto-flow: dense;
+}

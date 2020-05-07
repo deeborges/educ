@@ -1,7 +1,7 @@
 <template>
-  <form class="form__profile--address">
+  <form class="flux flux_one flux_row mg-v15 pd-n20">
     <p class="desc__params">Endereço:</p>
-    <div class="grid__06">
+    <div class="form_grid form_grid_six">
       <label for="logradouro">Logradouro:</label>
       <input type="text" name="logradouro" />
       <label for="complemento">Complemento:</label>
@@ -10,7 +10,7 @@
       <input type="text" name="numero_casa" />
     </div>
 
-    <div class="grid__06">
+    <div class="form_grid form_grid_six">
       <label for="bairro">Bairro:</label>
       <input type="text" name="bairro" />
       <label for="cidade">Cidade:</label>
@@ -55,6 +55,6 @@ export default {
 }
 </script>
 
-<style scoped>
-@import url('~/assets/dashboard/profile/profile-form-address.css');
+<style>
+@import url('~/assets/css/__layout/__dashboard/__profile/profile.css');
 </style>
